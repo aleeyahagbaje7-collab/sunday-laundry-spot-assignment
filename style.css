@@ -1,0 +1,385 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    width: 100%;
+    height: 112px;
+    background-color: #eff9ff;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    padding: 0 35px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo img {
+    width: 38px;
+    height: 38px;
+    object-fit: contain;
+
+}
+
+.brand h2 {
+    font-size: 18px;
+    color: #17283d;
+}
+
+.brand h2 span {
+    color: #16a9e8;
+}
+
+.brand p {
+    font-size: 10.2px;
+    letter-spacing: 2px;
+    color: #0490d1;
+    margin-top: 5px;
+    font-weight: bold;
+    font-weight: 600;
+    font-family:Arial, Helvetica, sans-serif
+    
+}
+
+.navigation {
+    display: flex;
+    gap: 28px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #43556d;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.install {
+    background: transparent;
+    background-color: #e8f5ff;
+    border: 1px solid #a6ddff;
+    border-radius: 13px;
+    padding: 10px 14px;
+    color: #3886b3;
+    font-size: 14px;
+    font-weight: 600;
+    font-weight: ;bold;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    line-height: 18px;
+}
+
+.install-icon {
+    font-size: 18px;
+}
+
+.language {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: #e8eef5;
+    padding: 9px 14px;
+    border-radius: 30px;
+    font-size: 12px;
+}
+
+.login {
+    text-decoration: none;
+    color: #34445b;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.pickup {
+    background: linear-gradient(135deg, #28b9f3, #0785ca);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 14px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 130, 200, 0.2);
+}
+
+.hero {
+  background: #eff9ff;
+  padding: 70px 6% 55px;
+  overflow: hidden;
+}
+
+.hero-container {
+  max-width: 1250px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 55px;
+}
+
+.hero-content {
+  max-width: 570px;
+}
+
+.location-tag {
+  display: inline-block;
+  background: #fefeee;
+  color: #62777b;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 10px 15px;
+  border-radius: 30px;
+  margin-bottom: 25px;
+}
+
+.hero-content span {
+  display: inline-block;
+  margin-right: 10px;
+  color: #0369a1;
+  font-weight: 600;
+  line-height: 35px;
+  letter-spacing: -0.5px;
+}
+
+.hero-content h1 {
+  font-size: clamp(42px, 5vw, 65px);
+  font-weight: 800;
+  line-height: 1.08;
+  letter-spacing: -2px;
+  color: #27384e;
+  margin-bottom: 25px;
+}
+
+.hero-content h1 span {
+  color: #0ba5cc;
+  position: relative;
+}
+
+.hero-content h1 span::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  background: #fdcf63;
+  left: 0;
+  bottom: -7px;
+  border-radius: 10px;
+}
+
+.hero-description {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #7a8790;
+  max-width: 520px;
+  margin-bottom: 30px;
+}
+
+
+
+.hero-buttons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 35px;
+}
+
+.btn-primary,
+.btn-secondary {
+  text-decoration: none;
+  padding: 17px 25px;
+  border-radius: 13px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn-primary {
+  color: white;
+  background: #3197b5;
+  box-shadow: 0 8px 20px rgba(49, 151, 181, 0.18);
+}
+
+.btn-primary:hover {
+  background: #247899;
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  color: #344353;
+  border: 1px solid #e3dfd5;
+  background: transparent;
+}
+
+.btn-secondary:hover {
+  background: #eeece5;
+}
+
+
+.hero-benefits {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 22px;
+}
+
+.benefit {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.benefit p {
+  font-size: 13px;
+  color: #697985;
+  margin: 0;
+}
+
+.benefit-icon {
+  color: #70a90b;
+  font-size: 17px;
+}
+
+.express-icon {
+  color: #d6b84b;
+}
+
+.shield-icon {
+  color: #78a88e;
+}
+
+
+
+.hero-image-area {
+  position: relative;
+  min-height: 390px;
+}
+
+.hero-image {
+  height: 390px;
+  overflow: hidden;
+  border-radius: 35px 35px 35px 100px;
+  background: #dce2eb;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+
+.ready-card {
+  position: absolute;
+  top: 30px;
+ 
+}
+
+
+.ready-card {
+  position: absolute;
+  top: 35px;
+  left: -25px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 13px 17px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(30, 50, 70, 0.1);
+}
+
+.ready-check {
+  width: 25px;
+  height: 25px;
+  background: #e6f1e8;
+  color: #67a558;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+
+.ready-card strong,
+.pickup-card strong,
+.washed-card strong {
+  display: block;
+  color: #34465a;
+  font-size: 13px;
+}
+
+.ready-card small,
+.pickup-card small {
+  color: #85959d;
+  font-size: 11px;
+  display: block;
+  margin-top: 4px;
+}
+
+
+.pickup-card {
+  position: absolute;
+  right: 20px;
+  bottom: 85px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.92);
+  padding: 13px 17px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(30, 50, 70, 0.12);
+}
+
+.pickup-icon {
+  background: #e8f0f4;
+  color: #4597b4;
+  padding: 12px;
+  border-radius: 10px;
+}
+
+
+.washed-card {
+  position: absolute;
+  bottom: -19px;
+  left: 38px;
+  background: rgba(45, 55, 75, 0.94);
+  border-radius: 15px;
+  padding: 13px 18px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.washed-card strong {
+  color: white;
+}
+
+.washed-icon {
+  background: rgba(255, 255, 255, 0.12);
+  padding: 12px;
+  border-radius: 10px;
+  color: white;
+}
+
